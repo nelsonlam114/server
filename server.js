@@ -310,7 +310,7 @@ app.post('/delete',function(req,res){
 app.post("/api/create", function(req,res){
 	MongoClient.connect(mongourl, function(err, db){
 	var newR = req.body;
-	if (!req.body.name){
+	if (!req.body.resname){
 	handleError(res, " Invalid user input", "Must provide a name.", 400);
 	}
 	
