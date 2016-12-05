@@ -1,0 +1,37 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "boom": "^4.2.0",
+    "cookie-session": "^2.0.0-alpha.2",
+    "cryptiles": "^3.1.1",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "hoek": "^4.1.0",
+    "jsprim": "^1.3.1",
+    "mongo": "^0.1.0",
+    "readable-stream": "^2.2.2",
+    "sntp": "^2.0.2",
+    "sshpk": "^1.10.1",
+    "watson-developer-cloud": "^2.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsonlam114/ServerSide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonlam114/ServerSide/issues"
+  },
+  "homepage": "https://github.com/nelsonlam114/ServerSide"
+}
