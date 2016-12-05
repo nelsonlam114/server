@@ -307,7 +307,23 @@ app.post('/delete',function(req,res){
       
 });
 
+app.post("/api/create", function(req,res){
+	MongoClient.connect(mongourl, function(err,db){
+	var newR = req.body;
 
+	if(!req.body.name){
+	handleError(res, "Invalid user input", "Must provide a name.", 400);
+		}
+	
+	db.collection('restaurant').insertOne(newR, function(err, doc){
+	var json;
+	if (err){
+		res.setHeader('Content-Type', 'application/json');
+		res.send(JSON.stringify({status: "ok",_id : newR._id}));
+		}
+	});
+	});
+});
 
 function findUser(db, username, password, callback){
 
